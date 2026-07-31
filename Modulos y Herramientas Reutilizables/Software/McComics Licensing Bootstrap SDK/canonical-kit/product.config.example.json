@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "product_id": "mi-programa-mccomics",
+  "product_name": "Mi Programa McComics",
+  "app_version": "1.0.0",
+  "license_mode": "freemium",
+  "license_server_url": "https://licencias.grupomccomics.com",
+  "update_manifest_name": "mi_programa_mccomics_version.json",
+  "update_manifest_url": "https://actualice.grupomccomics.com/mi_programa_mccomics_version.json",
+  "update_channel": "stable",
+  "offline_grace_days": 7,
+  "free_features": [
+    "core"
+  ]
+}

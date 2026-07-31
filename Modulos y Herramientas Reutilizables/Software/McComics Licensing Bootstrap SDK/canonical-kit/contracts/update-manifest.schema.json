@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://actualice.grupomccomics.com/contracts/update-manifest.schema.json",
+  "title": "MSLS signed update manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "product_id", "product_name", "channel", "latest_version", "download_url", "mandatory", "sha256", "published_at", "signed_payload", "signature", "signature_algorithm"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "product_id": { "type": "string" },
+    "product_name": { "type": "string" },
+    "channel": { "enum": ["stable", "beta", "nightly"] },
+    "latest_version": { "type": "string" },
+    "download_url": { "type": "string", "pattern": "^https://" },
+    "mandatory": { "type": "boolean" },
+    "minimum_supported_version": { "type": ["string", "null"] },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "size": { "type": ["string", "null"], "pattern": "^[0-9]+$" },
+    "published_at": { "type": "string", "format": "date-time" },
+    "signed_payload": { "type": "string", "contentEncoding": "base64" },
+    "signature": { "type": "string" },
+    "signature_algorithm": { "const": "RS256" }
+  }
+}

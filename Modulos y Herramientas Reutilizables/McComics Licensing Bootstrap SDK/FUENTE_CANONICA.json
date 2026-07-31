@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "name": "McComics Licensing Bootstrap Kit",
+  "local_repository": "C:\\Users\\McComics\\OneDrive\\Documentos\\Mis Documentos\\mccomics-secure-licensing-server",
+  "relative_kit_path": "integration-kit",
+  "repository": "https://github.com/McComics-Servics/MSLS.git",
+  "branch": "main"
+}

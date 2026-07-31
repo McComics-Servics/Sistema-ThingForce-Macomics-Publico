@@ -1,0 +1,26 @@
+
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales
+*.tmp
+*.log
+*.bak
+*.old
+*.swp
+*.swo
+
+# Carpetas temporales
+temp/
+tmp/
+backup/
+backups/
+__pycache__/
+
+# Entornos locales
+.env
+.env.local
+.env.*

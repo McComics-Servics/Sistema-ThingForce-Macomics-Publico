@@ -1,0 +1,4 @@
+interface:
+  display_name: "McComics Fachadas y Servicios"
+  short_description: "Modulariza monolitos McComics con probes"
+  default_prompt: "Usa este patron para modularizar un archivo gigante McComics con backup, recarga selectiva y validacion Remote Console."

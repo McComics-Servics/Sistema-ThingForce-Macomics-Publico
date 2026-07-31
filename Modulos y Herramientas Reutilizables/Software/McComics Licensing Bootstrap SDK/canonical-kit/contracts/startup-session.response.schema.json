@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://licencias.grupomccomics.com/contracts/startup-session.response.schema.json",
+  "title": "MSLS valid startup session",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["success", "valid", "plan", "features", "product", "token", "serverTimestamp", "nextValidation"],
+  "properties": {
+    "success": { "const": true },
+    "valid": { "const": true },
+    "plan": { "type": "string" },
+    "features": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "product": {
+      "type": "object",
+      "required": ["id", "name", "version"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "token": {
+      "type": "object",
+      "required": ["payload", "signature", "algorithm"],
+      "properties": {
+        "payload": { "type": "string" },
+        "signature": { "type": "string" },
+        "algorithm": { "const": "RS256" }
+      }
+    },
+    "serverTimestamp": { "type": "number" },
+    "nextValidation": { "type": "integer", "minimum": 60 },
+    "gracePeriodDays": { "type": "integer", "minimum": 0 }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://licencias.grupomccomics.com/contracts/startup-session.request.schema.json",
+  "title": "MSLS startup session request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["productId", "machineFingerprint", "installationId", "appVersion", "nonce", "clientTimestamp"],
+  "properties": {
+    "productId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "machineFingerprint": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "installationId": { "type": "string", "format": "uuid" },
+    "appVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$" },
+    "nonce": { "type": "string", "pattern": "^[a-fA-F0-9]{16,128}$" },
+    "licenseKey": { "type": "string", "pattern": "^MSLS-[A-Z0-9]{4}(?:-[A-Z0-9]{4}){3}$" },
+    "clientIntegrityHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "clientTimestamp": { "type": "number" }
+  }
+}
