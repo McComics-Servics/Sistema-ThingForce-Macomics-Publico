@@ -11,7 +11,7 @@ Este es el inventario canonico resumido de skills locales del workspace. Se cons
 - cargar solo la skill que realmente corresponda
 - si la tarea cruza UI HTML y servidores, cargar ambas
 - toda skill nueva debe registrarse aqui en el mismo cambio con ruta exacta, titulo-resumen y cuando cargar
-- estas skills viven en `./McComics-Agent-System/skills/` y son la referencia real actual para OpenCode, Codex y Claude Code
+- estas skills viven en `./McComics-Agent-System/skills/` y son la referencia real actual para OpenCode, Codex, Claude Code y ChatGPT/OpenAI
 
 ## Inventario rapido — UI, ventanas y operacion
 
@@ -26,6 +26,7 @@ Este es el inventario canonico resumido de skills locales del workspace. Se cons
 | `./McComics-Agent-System/skills/mccomics-remote-console-preflight/SKILL.md` | Preflight obligatorio para corridas remotas con PowerShell, UTF-8 y rutas Unicode     | Antes de cualquier probe Remote Console, script `.ps1` asociado o corrida con rutas largas, espacios o `™` |
 | `./McComics-Agent-System/skills/mccomics-remote-console-suite/SKILL.md`     | Validacion remota de ventanas McComics en SketchUp                                    | Remote Console, docking, probes reutilizables y evidencia de runtime                                       |
 | `./McComics-Agent-System/skills/mccomics-patch-safety-loop/SKILL.md`        | Bucle seguro de backup, evidencia previa, validacion repetida y comparacion posterior | Cambios vivos con riesgo en SketchUp, HtmlDialog, bridges o slices no 100% claros                          |
+| `./McComics-Agent-System/skills/mccomics-git-ramas-sketchup-seguras/SKILL.md` | Flujo Git con ramas, worktrees, deploy de prueba y rollback verificable              | Modificar el plugin desde GitHub/IA, probar una rama en la copia viva de SketchUp y volver a estable sin tocar `main` prematuramente |
 | `./McComics-Agent-System/skills/mccomics-formaciones-irrompibles/SKILL.md`  | Blindaje del escalado/redimensionado grupal y formaciones C/L/O con checker de invariantes ejecutable | **SIEMPRE** antes de tocar escalador, reflow de formaciones, joystick, zócalos o `handle_scaled_update` |
 | `./McComics-Agent-System/skills/mccomics-publicacion-segura-github/SKILL.md` | Publicación SEGURA de plugin McComics® en GitHub: repo público "vitrina" (estrellas, demos, marketing) + repo privado "core" (IP: código real, licencias, despiece) | Al **publicar/distribuir** el plugin en GitHub: estrategia freemium, protección de IP, estructura de dos repos, releases firmados |
 
@@ -93,6 +94,7 @@ El indice completo de estas skills vive en `./McComics-Agent-System/skills/skill
 - modularizar archivos gigantes McComics: `mccomics-modularizacion-fachada-servicios` + `mccomics-patch-safety-loop` + skill del owner
 - Remote Console, docking, titulos, popups y validacion de ventanas de suite: `mccomics-remote-console-preflight` + `mccomics-remote-console-suite` + `mccomics-ventanas-html`
 - cambios vivos con riesgo, necesidad de backup comparativo o falta de certeza total: `mccomics-patch-safety-loop` + `mccomics-remote-console-preflight` + skill del owner
+- GitHub, ramas, worktrees, Pull Requests, despliegue de una rama en la copia viva o rollback a estable: `mccomics-git-ramas-sketchup-seguras` + `mccomics-patch-safety-loop` + `mccomics-remote-console-preflight` + skill del owner
 - Ruby puro, observers, timers, atributos, undo: SK06 + SK07 + SK09
 - geometria, transformaciones, piezas nuevas: SK04 + (SK08 si modelo grande)
 - melamina, cajones, estructura, despiece: SK10 + `SKILL_MELAMINA_MCC.md`
@@ -106,4 +108,4 @@ El indice completo de estas skills vive en `./McComics-Agent-System/skills/skill
 
 ---
 
-<!-- sistema: ThinkForce™ McComics | archivo: INDICE_SKILLS.md | actualizado: 2026-05 -->
+<!-- sistema: ThinkForce™ McComics | archivo: INDICE_SKILLS.md | actualizado: 2026-07-31 -->
