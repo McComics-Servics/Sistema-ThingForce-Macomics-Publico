@@ -1,0 +1,4 @@
+interface:
+  display_name: "McComics Git Seguro"
+  short_description: "Ramas, pruebas y rollback seguro en SketchUp"
+  default_prompt: "Aplica el flujo McComics para modificar McComicsUp Suite Pro IA desde una rama y worktree aislados, analizar dependencias con ThingForce, crear backups, desplegar en la copia viva, validar en SketchUp y conservar un rollback verificable sin tocar main antes de la aprobación del dueño."
