@@ -17,6 +17,7 @@
 | Verificar en vivo (Remote Console) | `ThinkForce/PROTOCOLO_REMOTE_CONSOLE.md` + MEMORIA_MAESTRA §4 |
 | Arquitectura Estructura Pro / módulos paramétricos | `ThinkForce/17-ARQUITECTURA_ESTRUCTURA_PRO.md` |
 | Dónde tocar / dependencias / ownership | `Sistema_Ahorro_Tokens/03_GRAFO_INCREMENTAL/mc_graph_out/GRAPH_REPORT.md` (consultar vía `Sistema_Ahorro_Tokens/04_ADAPTADORES/graph_query.py`; jamás cargar graph.json completo) |
+| GitHub / ramas / worktrees / Pull Requests / prueba de una rama en SketchUp / rollback | `SKILL/mccomics-git-ramas-sketchup-seguras/SKILL.md` + `SKILL/mccomics-patch-safety-loop/SKILL.md` + skill del owner exacto; si hay runtime, añadir Remote Console |
 | Despiece / melamina / CNC / cocinas | MEMORIA_MAESTRA §5 (R-021: Despiece intocable) + skill de melamina/cocinas vía `SKILL/INDICE_SKILLS.md` |
 | Motor Go / migración / modo sombra | R-030 + MEMORIA_MAESTRA §4 (native/ es gitignored pero está VIVO) + skill `SKILL/mccomics-migracion-hibrida-go-cpp/SKILL.md` |
 | Modularizar archivos gigantes | skill `SKILL/mccomics-modularizacion-fachada-servicios/SKILL.md` + MEMORIA_MAESTRA §2 (vars colgando) |
@@ -35,4 +36,4 @@
 - [ ] fui a la fuente viva exacta (el código manda, los resúmenes enrutan)
 - [ ] no estoy leyendo corpus ni archivos históricos sin necesidad real
 
-<!-- sistema: ThingForce™ McComics | SELECTOR_DE_MEMORIA.md | actualizado: 2026-07-22 -->
+<!-- sistema: ThingForce™ McComics | SELECTOR_DE_MEMORIA.md | actualizado: 2026-07-31 -->
