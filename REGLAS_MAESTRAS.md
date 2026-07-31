@@ -99,6 +99,12 @@
   `git clean -fdx`. *(MANUAL_OPERATIVO_UNIFICADO — regla de oro 1)*
 - **R-041** Cada IA en SU rama/worktree; nadie edita la zona de otra IA; solo
   Codex integra y despliega al final. *(MANUAL_OPERATIVO_UNIFICADO)*
+- **R-064 (RAMA NUEVA POR CAMBIO)** Antes de modificar cualquier repositorio por
+  una solicitud del dueño, cada IA crea una rama nueva y exclusiva desde la rama
+  estable. ChatGPT usa `ChatGPT-<nombre-resumido-del-cambio>`; el resumen debe ser
+  breve, claro y usar guiones. Prohibido reutilizar una rama para una tarea
+  distinta, modificar `main` directamente o mezclar cambios no relacionados. Si
+  una solicitud toca varios repositorios, cada repositorio recibe su propia rama.
 - **R-042** Editar la FUENTE, nunca `dist`; la copia OneDrive es histórica.
   *(MANUAL_OPERATIVO_UNIFICADO)*
 - **R-043** SSH: UN solo intento; si falla, esperar ventana estable (fail2ban
