@@ -1,0 +1,3 @@
+Hola, McComics® 👋
+
+Esta es la primera prueba controlada creada por ChatGPT en la rama ChatGPT-web.
